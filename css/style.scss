@@ -19,19 +19,42 @@ body{
 
 .main-wrapper{
   width: 100%;
-  height: 100vh; //sementara
   max-width: 140rem;
-  margin: 0 auto;
+  margin: 2rem auto;
   background-color: lightgoldenrodyellow;
   text-align: center;
 }
 
-h1{
+.header h1{
   font-size: 3.2rem;
   color: #000;
 }
 
-h2{
+.main h2{
   font-size: 2rem;
   color: #000;
+}
+
+.main {
+  width: 100%;
+  padding: 0 20rem;
+  margin: 20vh auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main section{
+  width: 100%;
+  max-width: 60rem;
+  height: 50vh; //sementara
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main section:nth-child(2){
+  margin: 0 2rem;
 }

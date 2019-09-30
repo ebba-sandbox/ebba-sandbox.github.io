@@ -21,20 +21,54 @@ body {
 
 .main-wrapper {
   width: 100%;
-  height: 100vh;
   max-width: 140rem;
-  margin: 0 auto;
+  margin: 2rem auto;
   background-color: lightgoldenrodyellow;
   text-align: center;
 }
 
-h1 {
+.header h1 {
   font-size: 3.2rem;
   color: #000;
 }
 
-h2 {
+.main h2 {
   font-size: 2rem;
   color: #000;
+}
+
+.main {
+  width: 100%;
+  padding: 0 20rem;
+  margin: 20vh auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main section {
+  width: 100%;
+  max-width: 60rem;
+  height: 50vh;
+  background-color: coral;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main section:nth-child(2) {
+  margin: 0 2rem;
 }
 /*# sourceMappingURL=style.css.map */
