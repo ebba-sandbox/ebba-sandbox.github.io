@@ -17,13 +17,15 @@ body {
           box-sizing: border-box;
   font-weight: 400;
   line-height: 1.7;
-  padding: 10rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
 }
 
 .main-wrapper {
-  width: 100%;
-  max-width: 140rem;
-  margin: 2rem auto;
   background-color: lightgoldenrodyellow;
   text-align: center;
 }
@@ -40,11 +42,13 @@ body {
 
 .main {
   width: 100%;
-  padding: 0 20rem;
-  margin: 20vh auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -54,7 +58,7 @@ body {
 }
 
 .main section {
-  width: 100%;
+  width: 90%;
   max-width: 60rem;
   height: 50vh;
   background-color: coral;
@@ -70,6 +74,20 @@ body {
 }
 
 .main section:nth-child(2) {
-  margin: 0 2rem;
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 675px) {
+  .main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 20vh auto;
+    padding: 0 2rem;
+  }
+  .main section:nth-child(2) {
+    margin: 0 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
