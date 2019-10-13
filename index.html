@@ -30,27 +30,53 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto|Sawarabi+Mincho|Ubuntu:400,700&display=swap" rel="stylesheet">  
 </head>
 <body>
-  <div class="container main-wrapper">
-    <header class="header">
-      <h1>My best resource for web dev</h1>
-    </header>
-    <main class="main">
-      <section class="card typography">
-        <h2>Header Parts</h2>
-      </section>
-      <section class="card layout">
-        <h2>Body / Main Parts</h2>
-      </section>
-      <section class="card javascript">
-        <h2>Footer Parts</h2>
-      </section>
-      <section class="card misc">
-        <h2>miscellaneous</h2>
-      </section>
-    </main>
-    <footer class="footer">
-      <h2>This is for Footer &copy;</h2>
-    </footer>
-  </div>
+  <div class="main-container">
+    <!-- HEADER SECTION START -->
+    <header id="header" class="header">
+      <div class="header__inner">
+        <nav class="header__menu">
+            <div class="header__site-logo">
+              <svg class="icon header__icon">
+                <use xlink:href="img/icon/sprite.svg#icon-book"></use>
+              </svg>
+              <h1 class="header__logo">
+                My Resource
+              </h1>
+            </div>
+            <ul class="header__navbar">
+              <li>MENU 1</li>
+              <li>MENU 2</li>
+              <li>MENU 3</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- HEADER SECTION END -->
+      
+      <!-- MAIN SECTION START -->
+      <!-- <main id="main" class="main">
+        <section class="card typography">
+          <h2>Header Parts</h2>
+        </section>
+        <section class="card layout">
+          <h2>Body / Main Parts</h2>
+        </section>
+        <section class="card javascript">
+          <h2>Footer Parts</h2>
+        </section>
+        <section class="card misc">
+          <h2>miscellaneous</h2>
+        </section>
+      </main> -->
+      <!-- MAIN SECTION END -->
+      
+      <!-- FOOTER SECTION START -->
+      <footer id="footer" class="footer">
+        <h2>This is for Footer &copy;</h2>
+      </footer>
+      <!-- FOOTER SECTION START -->
+    </div>
 </body>
+<!-- SVG ICON FALLBACK FOR IE 9+ -->
+<script src="img/icon/svgxuse.min.js"></script>
 </html>

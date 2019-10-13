@@ -1,3 +1,4 @@
+/*BASE*/
 *,
 *::before,
 *::after {
@@ -7,6 +8,11 @@
           box-sizing: inherit;
 }
 
+/*
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Sawarabi Mincho', sans-serif;
+*/
 html {
   font-size: 62.5%;
   /* 10 px = 1rem */
@@ -15,68 +21,113 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Roboto', 'Ubuntu', 'Sawarabi Mincho', sans-serif;
   font-weight: 400;
   line-height: 1.7;
+  background-color: #fff;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
 }
 
-.header h1 {
-  font-size: 3.2rem;
-  color: #000;
+ul,
+ol {
+  list-style-type: none;
 }
 
-.main h2 {
-  font-size: 2rem;
-  color: #000;
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
-.container {
+/*BASE*/
+/*TYPOGRAPHY*/
+/*TYPOGRAPHY*/
+/*LAYOUT*/
+.main-container {
+  padding-bottom: 2.5rem;
+}
+
+/*HEADER START*/
+.header {
   width: 100%;
-  max-width: 1200px;
-  margin: 2rem auto;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
 }
 
-.main-wrapper {
-  background-color: lightgoldenrodyellow;
-  text-align: center;
-}
-
-.card {
+.header__site-logo {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 10rem;
-          flex: 0 0 10rem;
-  padding: 0 20px;
-  height: 50vh;
-  background-color: coral;
+      -ms-flex: 0 0 43%;
+          flex: 0 0 43%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
+.header__logo {
+  font-size: 2rem;
+  font-family: 'ubuntu',sans-serif;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.header__icon {
+  fill: orangered;
+}
+
+.header__menu {
+  margin: 0 1rem;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__navbar {
+  background-image: url(../img/icon/SVG/hamburger-solid.svg);
+  width: 2rem;
+  height: 2rem;
+  fill: orangered;
+}
+
+.header__navbar li {
+  display: none;
+}
+
+/*HEADER END*/
+/*FOOTER START*/
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: 'ubuntu', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 0 -1px 1px 0 rgba(66, 58, 58, 0.274);
+          box-shadow: 0 -1px 1px 0 rgba(66, 58, 58, 0.274);
+}
+
+/*FOOTER END*/
+/*LAYOUT*/
+/*MEDIA*/
 @media screen and (min-width: 675px) {
   .main {
     -webkit-box-orient: horizontal;
@@ -87,4 +138,6 @@ body {
     padding: 0 2rem;
   }
 }
+
+/*MEDIA*/
 /*# sourceMappingURL=style.css.map */

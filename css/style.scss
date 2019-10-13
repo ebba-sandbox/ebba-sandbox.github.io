@@ -1,3 +1,4 @@
+/*BASE*/
 *,
 *::before,
 *::after{
@@ -6,6 +7,12 @@
   box-sizing: inherit;
 }
 
+/*
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Sawarabi Mincho', sans-serif;
+*/
+
 html{
   font-size: 62.5%;
   /* 10 px = 1rem */
@@ -13,52 +20,109 @@ html{
 
 body{
   box-sizing: border-box;
-  
+  font-family: 'Roboto', 'Ubuntu', 'Sawarabi Mincho', sans-serif;
   font-weight: 400;
   line-height: 1.7;
+  background-color: #fff;
+
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
 }
 
-.header h1{
-  font-size: 3.2rem;
-  color: #000;
+ul,
+ol{
+  list-style-type: none;
 }
 
-.main h2{
-  font-size: 2rem;
-  color: #000;
+.icon{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+/*BASE*/
+
+/*TYPOGRAPHY*/
+
+/*TYPOGRAPHY*/
+
+/*LAYOUT*/
+.main-container{
+  padding-bottom: 2.5rem;
 }
 
-.container{
+/*HEADER START*/
+.header{
   width: 100%;
-  max-width: 1200px;
-  margin: 2rem auto;
-}
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
+  background:#fff;
 
-.main-wrapper{
-  background-color: lightgoldenrodyellow;
+  &__site-logo{
+    flex: 0 0 43%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo{
+    font-size: 2rem;
+    font-family: 'ubuntu',sans-serif;
+    font-weight: 700;
+    line-height: 1.7;
+
+  }
+
+  &__icon{
+    fill: orangered;
+  }
+
+  &__menu{
+    margin: 0 1rem;
+    padding: 2rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__navbar{
+    background-image: url(../img/icon/SVG/hamburger-solid.svg);
+    width: 2rem;
+    height: 2rem;
+    fill: orangered;
+
+    li{
+      display: none;
+    }
+
+  }
+}
+/*HEADER END*/
+
+/*FOOTER START*/
+.footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
   text-align: center;
+
+  font-size: 1.8rem;
+  font-family: 'ubuntu', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  background-color: #f6f6f6;
+
+  box-shadow: 0 -1px 1px 0 rgba(66, 58, 58, 0.274);
 }
 
-.card {
-  flex: 0 0 10rem;
-  padding: 0 20px;
-  height: 50vh; //sementara
-  background-color: coral;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/*FOOTER END*/
 
-.main {
-  width: 100%;
+/*LAYOUT*/
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
+/*MEDIA*/
 @media screen and (min-width: 675px) {
   .main{
     flex-direction: row;
@@ -66,3 +130,4 @@ body{
     padding: 0 2rem;
   }
 }
+/*MEDIA*/
