@@ -35,48 +35,162 @@
     <header id="header" class="header">
       <div class="header__inner">
         <nav class="header__menu">
-            <div class="header__site-logo">
+          <div class="header__site-logo">
+            <a href="#">
               <svg class="icon header__icon">
                 <use xlink:href="img/icon/sprite.svg#icon-book"></use>
               </svg>
               <h1 class="header__logo">
                 My Resource
               </h1>
-            </div>
+            </a>
+          </div>
+          <div class="">
+            <a href="#" id="toggleNav">☰</a>
             <ul class="header__navbar">
               <li>MENU 1</li>
               <li>MENU 2</li>
               <li>MENU 3</li>
             </ul>
-          </nav>
-        </div>
-      </header>
-      <!-- HEADER SECTION END -->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER SECTION END -->
       
-      <!-- MAIN SECTION START -->
-      <!-- <main id="main" class="main">
-        <section class="card typography">
-          <h2>Header Parts</h2>
+    <!-- MAIN SECTION START -->
+    <main id="main" class="main">
+      <div class="inner">
+        <section class="site-headline">
+          <h2 class="site-headline__heading-primary">
+            <svg class="icon site-headline__icon">
+              <use xlink:href="img/icon/sprite.svg#icon-pencil"></use>
+            </svg>
+            Larc VikZ Documentation Site 🤟
+          </h2>
         </section>
-        <section class="card layout">
-          <h2>Body / Main Parts</h2>
+        
+        <section class="tiles">
+          <article class="tiles__item">
+            <div class="tiles__img">
+              <img src="https://picsum.photos/500/500" alt="">
+            </div>
+            <a href="#">
+              <h2 class="tiles__ttl">Tiles 1</h2>
+              <div class="tiles__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque?</p>
+              </div>
+            </a>
+          </article>
+          <article class="tiles__item">
+            <div class="tiles__img">
+              <img src="https://picsum.photos/500/500" alt="">
+            </div>
+            <a href="#">
+              <h2 class="tiles__ttl">Tiles 2</h2>
+              <div class="tiles__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque?</p>
+              </div>
+            </a>
+          </article>
+          <article class="tiles__item">
+            <div class="tiles__img">
+              <img src="https://picsum.photos/500/500" alt="">
+            </div>
+            <a href="#">
+              <h2 class="tiles__ttl">Tiles 3</h2>
+              <div class="tiles__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque?</p>
+              </div>
+            </a>
+          </article>
+          <article class="tiles__item">
+            <div class="tiles__img">
+              <img src="https://picsum.photos/500/500" alt="">
+            </div>
+            <a href="#">
+              <h2 class="tiles__ttl">Tiles 4</h2>
+              <div class="tiles__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque?</p>
+              </div>
+            </a>
+          </article>
+          <article class="tiles__item">
+            <div class="tiles__img">
+              <img src="https://picsum.photos/500/500" alt="">
+            </div>
+            <a href="#">
+              <h2 class="tiles__ttl">Tiles 5</h2>
+              <div class="tiles__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque?</p>
+              </div>
+            </a>
+          </article>
+          <article class="tiles__item">
+            <div class="tiles__img">
+              <img src="https://picsum.photos/500/500" alt="">
+            </div>
+            <a href="#">
+              <h2 class="tiles__ttl">Tiles 6</h2>
+              <div class="tiles__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque?</p>
+              </div>
+            </a>
+          </article>
+          <article class="tiles__item">
+            <div class="tiles__img">
+              <img src="https://picsum.photos/500/500" alt="">
+            </div>
+            <a href="#">
+              <h2 class="tiles__ttl">Tiles 7</h2>
+              <div class="tiles__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque?</p>
+              </div>
+            </a>
+          </article>
+          <article class="tiles__item">
+            <div class="tiles__img">
+              <img src="https://picsum.photos/500/500" alt="">
+            </div>
+            <a href="#">
+              <h2 class="tiles__ttl">Tiles 8</h2>
+              <div class="tiles__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque?</p>
+              </div>
+            </a>
+          </article>
+          <article class="tiles__item">
+            <div class="tiles__img">
+              <img src="https://picsum.photos/500/500" alt="">
+            </div>
+            <a href="#">
+              <h2 class="tiles__ttl">Tiles 9</h2>
+              <div class="tiles__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque?</p>
+              </div>
+            </a>
+          </article>
         </section>
-        <section class="card javascript">
-          <h2>Footer Parts</h2>
-        </section>
-        <section class="card misc">
-          <h2>miscellaneous</h2>
-        </section>
-      </main> -->
-      <!-- MAIN SECTION END -->
-      
-      <!-- FOOTER SECTION START -->
-      <footer id="footer" class="footer">
-        <h2>This is for Footer &copy;</h2>
-      </footer>
-      <!-- FOOTER SECTION START -->
-    </div>
+      </div>
+    </main>
+    <!-- MAIN SECTION END -->
+    
+    <!-- FOOTER SECTION START -->
+    <footer id="footer" class="footer">
+      <h2>This is for Footer &copy;</h2>
+    </footer>
+    <!-- FOOTER SECTION START -->
+  </div>
 </body>
 <!-- SVG ICON FALLBACK FOR IE 9+ -->
 <script src="img/icon/svgxuse.min.js"></script>
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $(function () {
+    $("#toggleNav").on('click',function(){
+      $(".header__navbar").toggleClass('open');
+    })
+  })
+</script>
 </html>
