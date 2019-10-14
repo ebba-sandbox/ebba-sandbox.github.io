@@ -179,7 +179,7 @@ a{
       }
 
       .tiles__img::before{
-        background-color: #333333;
+        // background-color: #333333;
         opacity: 0.35;
       }
 
@@ -194,59 +194,60 @@ a{
     }
 
     // COLOR BACKGROUND
-    &:nth-child(1){
-      .tiles__img::before{
-        background-color: #f2849e;
-      }
-    }
+    // &:nth-child(1){
+    //   .tiles__img::before{
+    //     background-color: #333333;
+    //   }
+    // }
 
-    &:nth-child(2){
-      .tiles__img::before{
-        background-color: #696364;
-      }
-    }
+    // &:nth-child(2){
+    //   .tiles__img::before{
+    //     background-color: #696364;
+    //   }
+    // }
     
-    &:nth-child(3){
-      .tiles__img::before{
-        background-color: #7bd0c1;
-      }
-    }
+    // &:nth-child(3){
+    //   .tiles__img::before{
+    //     background-color: #7bd0c1;
+    //   }
+    // }
 
-    &:nth-child(4){
-      .tiles__img::before{
-        background-color: #c75b9b;
-      }
-    }
+    // &:nth-child(4){
+    //   .tiles__img::before{
+    //     background-color: #c75b9b;
+    //   }
+    // }
 
-    &:nth-child(5){
-      .tiles__img::before{
-        background-color: #ae85ca;
-      }
-    }
+    // &:nth-child(5){
+    //   .tiles__img::before{
+    //     background-color: #ae85ca;
+    //   }
+    // }
 
-    &:nth-child(6){
-      .tiles__img::before{
-        background-color: #8499e7;
-      }
-    }
+    // &:nth-child(6){
+    //   .tiles__img::before{
+    //     background-color: #8499e7;
+    //   }
+    // }
 
-    &:nth-child(7){
-      .tiles__img::before{
-        background-color: #7ecaf6;
-      }
-    }
+    // &:nth-child(7){
+    //   .tiles__img::before{
+    //     background-color: #7ecaf6;
+    //   }
+    // }
 
-    &:nth-child(8){
-      .tiles__img::before{
-        background-color: #f2849e;
-      }
-    }
+    // &:nth-child(8){
+    //   .tiles__img::before{
+    //     background-color: #f2849e;
+    //   }
+    // }
 
-    &:nth-child(9){
-      .tiles__img::before{
-        background-color: #7ecaf6;
-      }
-    }
+    // &:nth-child(9){
+    //   .tiles__img::before{
+    //     background-color: #7ecaf6;
+    //   }
+    // }
+
   }
   
   &__img{
@@ -275,6 +276,8 @@ a{
       opacity: 1.0;
       z-index: 1;
       opacity: 0.8;
+
+      background-color: #333333;
     }
 
     &::after{
